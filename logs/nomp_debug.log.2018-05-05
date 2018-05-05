@@ -1,0 +1,383 @@
+[2018-05-05T10:47:16.228Z] [info] [system] [CLI] : CLI listening on 127.0.0.1:17117
+[2018-05-05T10:47:16.209Z] [debug] [system] [init.js] : POSIX Connection Limit (Safe to ignore) POSIX module not installed and resource (connection) limit was not raised
+[2018-05-05T10:47:16.217Z] [error] [system] [init.js] : [reef] Cannot run a pool for unsupported algorithm "x16s"
+[2018-05-05T10:47:16.217Z] [warn] [system] [init.js] : PoolSpawner: No pool configs exists or are enabled in pool_configs folder. No pools spawned.
+[2018-05-05T10:47:16.574Z] [info] [system] [Stats] : Starting stats module
+[2018-05-05T10:47:16.571Z] [info] [system] [Website] : Starting Website module
+[2018-05-05T10:47:16.574Z] [debug] [system] [Stats] : Setting up statsRedis
+[2018-05-05T10:47:16.577Z] [debug] [system] [Stats] : Setting up statHistory
+[2018-05-05T10:47:16.599Z] [info] [system] [Website] : Website started on 0.0.0.0:8000
+[2018-05-05T10:49:03.453Z] [info] [system] [CLI] : CLI listening on 127.0.0.1:17117
+[2018-05-05T10:49:03.432Z] [debug] [system] [init.js] : POSIX Connection Limit (Safe to ignore) POSIX module not installed and resource (connection) limit was not raised
+[2018-05-05T10:49:03.811Z] [info] [system] [PaymentProcessing] : Payment processor worker started
+[2018-05-05T10:49:03.821Z] [debug] [reef] [PaymentProcessor] : Validating address and balance
+[2018-05-05T10:49:03.815Z] [info] [system] [PaymentProcessing] : Enabled reef for payment processing
+[2018-05-05T10:49:03.816Z] [info] [system] [Stats] : Starting stats module
+[2018-05-05T10:49:03.812Z] [info] [system] [Website] : Starting Website module
+[2018-05-05T10:49:03.816Z] [debug] [system] [Stats] : Setting up statsRedis
+[2018-05-05T10:49:03.819Z] [debug] [system] [Stats] : Setting up statHistory
+[2018-05-05T10:49:03.843Z] [info] [system] [Website] : Website started on 0.0.0.0:8000
+[2018-05-05T10:49:03.844Z] [debug] [system] [PaymentProcessing] : Processing processor initialized. Setup results true
+[2018-05-05T10:49:03.844Z] [info] [system] [PaymentProcessing] : Payment processing setup to run every 20 second(s) with daemon (reefd@127.0.0.1:23344) and redis (127.0.0.1:6379)
+[2018-05-05T10:49:03.945Z] [debug] [reef] [PaymentProcessor] : Calling redis for array of rounds
+[2018-05-05T10:49:03.948Z] [debug] [reef] [PaymentProcessor] : Redis responsed: [null,[]]
+[2018-05-05T10:49:03.948Z] [debug] [reef] [PaymentProcessor] : Prepared info basic info about payments
+[2018-05-05T10:49:03.948Z] [debug] [reef] [PaymentProcessor] : Workers count: 0 Rounds: %
+[2018-05-05T10:49:03.949Z] [debug] [reef] [PaymentProcessor] : Checking for confirmed rounds (blocks)
+[2018-05-05T10:49:03.952Z] [warn] [reef] [PaymentProcessor] : Could not decrypt address from tx (no tx.result or tx.address field) {"result":"","error":null,"id":1525517343952}
+[2018-05-05T10:49:03.953Z] [debug] [reef] [PaymentProcessor] : Getting all shares for rounds and calculating rewards for miners
+[2018-05-05T10:49:03.954Z] [debug] [reef] [PaymentProcessor] : Mapping workers into payout addresses
+[2018-05-05T10:49:03.954Z] [debug] [reef] [PaymentProcessor] : Merged workers into payout addresses
+[2018-05-05T10:49:03.955Z] [debug] [reef] [PaymentProcessor] : Almost ready to send funds, calculating against existing balances
+[2018-05-05T10:49:03.955Z] [debug] [reef] [PaymentProcessor] : Trying to send
+[2018-05-05T10:49:03.955Z] [info] [reef] [PaymentProcessor] : No workers was chosen for paying out
+[2018-05-05T10:49:03.956Z] [debug] [reef] [PaymentProcessor] : Finished interval - time spent: 11 ms total, 3 ms redis, 6 ms daemon RPC
+[2018-05-05T10:49:04.071Z] [debug] [system] [SwitchingSetup[:1]] : Loading last proxy state from redis
+[2018-05-05T10:49:04.081Z] [debug] [reef] [ShareProcessor [:0]] : Share processing setup with redis (127.0.0.1:6379)
+[2018-05-05T10:49:04.103Z] [warn] [reef] [Pool [:1]] : Daemon returned unexpected return code 500, data = "{\"result\":null,\"error\":{\"code\":-10,\"message\":\"Reef Core is syncing with network...\"},\"id\":1525517344107}\n"
+[2018-05-05T10:49:04.321Z] [debug] [system] [SwitchingSetup[:2]] : Loading last proxy state from redis
+[2018-05-05T10:49:04.331Z] [debug] [reef] [ShareProcessor [:1]] : Share processing setup with redis (127.0.0.1:6379)
+[2018-05-05T10:49:04.344Z] [warn] [reef] [Pool [:2]] : Daemon returned unexpected return code 500, data = "{\"result\":null,\"error\":{\"code\":-10,\"message\":\"Reef Core is syncing with network...\"},\"id\":1525517344343}\n"
+[2018-05-05T10:49:04.452Z] [debug] [system] [init.js] : Master
+[2018-05-05T10:49:04.569Z] [debug] [system] [SwitchingSetup[:3]] : Loading last proxy state from redis
+[2018-05-05T10:49:04.580Z] [debug] [reef] [ShareProcessor [:2]] : Share processing setup with redis (127.0.0.1:6379)
+[2018-05-05T10:49:04.593Z] [warn] [reef] [Pool [:3]] : Daemon returned unexpected return code 500, data = "{\"result\":null,\"error\":{\"code\":-10,\"message\":\"Reef Core is syncing with network...\"},\"id\":1525517344591}\n"
+[2018-05-05T10:49:04.829Z] [debug] [system] [SwitchingSetup[:4]] : Loading last proxy state from redis
+[2018-05-05T10:49:04.839Z] [debug] [reef] [ShareProcessor [:3]] : Share processing setup with redis (127.0.0.1:6379)
+[2018-05-05T10:49:04.852Z] [warn] [reef] [Pool [:4]] : Daemon returned unexpected return code 500, data = "{\"result\":null,\"error\":{\"code\":-10,\"message\":\"Reef Core is syncing with network...\"},\"id\":1525517344859}\n"
+[2018-05-05T10:49:23.863Z] [debug] [reef] [PaymentProcessor] : Calling redis for array of rounds
+[2018-05-05T10:49:23.864Z] [info] [reef] [PaymentProcessor] : Set up to process payments every 20 seconds
+[2018-05-05T10:49:23.865Z] [debug] [reef] [PaymentProcessor] : Redis responsed: [null,[]]
+[2018-05-05T10:49:23.865Z] [debug] [reef] [PaymentProcessor] : Prepared info basic info about payments
+[2018-05-05T10:49:23.866Z] [debug] [reef] [PaymentProcessor] : Workers count: 0 Rounds: %
+[2018-05-05T10:49:23.866Z] [debug] [reef] [PaymentProcessor] : Checking for confirmed rounds (blocks)
+[2018-05-05T10:49:23.868Z] [warn] [reef] [PaymentProcessor] : Could not decrypt address from tx (no tx.result or tx.address field) {"result":"","error":null,"id":1525517363874}
+[2018-05-05T10:49:23.869Z] [debug] [reef] [PaymentProcessor] : Getting all shares for rounds and calculating rewards for miners
+[2018-05-05T10:49:23.870Z] [debug] [reef] [PaymentProcessor] : Mapping workers into payout addresses
+[2018-05-05T10:49:23.871Z] [debug] [reef] [PaymentProcessor] : Merged workers into payout addresses
+[2018-05-05T10:49:23.871Z] [debug] [reef] [PaymentProcessor] : Almost ready to send funds, calculating against existing balances
+[2018-05-05T10:49:23.871Z] [debug] [reef] [PaymentProcessor] : Trying to send
+[2018-05-05T10:49:23.872Z] [info] [reef] [PaymentProcessor] : No workers was chosen for paying out
+[2018-05-05T10:49:23.872Z] [debug] [reef] [PaymentProcessor] : Finished interval - time spent: 9 ms total, 3 ms redis, 5 ms daemon RPC
+[2018-05-05T10:49:43.867Z] [debug] [reef] [PaymentProcessor] : Calling redis for array of rounds
+[2018-05-05T10:49:43.867Z] [info] [reef] [PaymentProcessor] : Set up to process payments every 20 seconds
+[2018-05-05T10:49:43.868Z] [debug] [reef] [PaymentProcessor] : Redis responsed: [null,[]]
+[2018-05-05T10:49:43.868Z] [debug] [reef] [PaymentProcessor] : Prepared info basic info about payments
+[2018-05-05T10:49:43.869Z] [debug] [reef] [PaymentProcessor] : Workers count: 0 Rounds: %
+[2018-05-05T10:49:43.869Z] [debug] [reef] [PaymentProcessor] : Checking for confirmed rounds (blocks)
+[2018-05-05T10:49:43.871Z] [warn] [reef] [PaymentProcessor] : Could not decrypt address from tx (no tx.result or tx.address field) {"result":"","error":null,"id":1525517383872}
+[2018-05-05T10:49:43.872Z] [debug] [reef] [PaymentProcessor] : Getting all shares for rounds and calculating rewards for miners
+[2018-05-05T10:49:43.873Z] [debug] [reef] [PaymentProcessor] : Mapping workers into payout addresses
+[2018-05-05T10:49:43.873Z] [debug] [reef] [PaymentProcessor] : Merged workers into payout addresses
+[2018-05-05T10:49:43.873Z] [debug] [reef] [PaymentProcessor] : Almost ready to send funds, calculating against existing balances
+[2018-05-05T10:49:43.874Z] [debug] [reef] [PaymentProcessor] : Trying to send
+[2018-05-05T10:49:43.874Z] [info] [reef] [PaymentProcessor] : No workers was chosen for paying out
+[2018-05-05T10:49:43.875Z] [debug] [reef] [PaymentProcessor] : Finished interval - time spent: 7 ms total, 2 ms redis, 4 ms daemon RPC
+[2018-05-05T10:50:03.882Z] [debug] [reef] [PaymentProcessor] : Calling redis for array of rounds
+[2018-05-05T10:50:03.883Z] [info] [reef] [PaymentProcessor] : Set up to process payments every 20 seconds
+[2018-05-05T10:50:03.883Z] [debug] [reef] [PaymentProcessor] : Redis responsed: [null,[]]
+[2018-05-05T10:50:03.884Z] [debug] [reef] [PaymentProcessor] : Prepared info basic info about payments
+[2018-05-05T10:50:03.884Z] [debug] [reef] [PaymentProcessor] : Workers count: 0 Rounds: %
+[2018-05-05T10:50:03.884Z] [debug] [reef] [PaymentProcessor] : Checking for confirmed rounds (blocks)
+[2018-05-05T10:50:03.887Z] [warn] [reef] [PaymentProcessor] : Could not decrypt address from tx (no tx.result or tx.address field) {"result":"","error":null,"id":1525517403893}
+[2018-05-05T10:50:03.887Z] [debug] [reef] [PaymentProcessor] : Getting all shares for rounds and calculating rewards for miners
+[2018-05-05T10:50:03.888Z] [debug] [reef] [PaymentProcessor] : Mapping workers into payout addresses
+[2018-05-05T10:50:03.889Z] [debug] [reef] [PaymentProcessor] : Merged workers into payout addresses
+[2018-05-05T10:50:03.889Z] [debug] [reef] [PaymentProcessor] : Almost ready to send funds, calculating against existing balances
+[2018-05-05T10:50:03.889Z] [debug] [reef] [PaymentProcessor] : Trying to send
+[2018-05-05T10:50:03.890Z] [info] [reef] [PaymentProcessor] : No workers was chosen for paying out
+[2018-05-05T10:50:03.890Z] [debug] [reef] [PaymentProcessor] : Finished interval - time spent: 8 ms total, 1 ms redis, 4 ms daemon RPC
+[2018-05-05T10:50:23.902Z] [debug] [reef] [PaymentProcessor] : Calling redis for array of rounds
+[2018-05-05T10:50:23.903Z] [info] [reef] [PaymentProcessor] : Set up to process payments every 20 seconds
+[2018-05-05T10:50:23.904Z] [debug] [reef] [PaymentProcessor] : Redis responsed: [null,[]]
+[2018-05-05T10:50:23.904Z] [debug] [reef] [PaymentProcessor] : Prepared info basic info about payments
+[2018-05-05T10:50:23.905Z] [debug] [reef] [PaymentProcessor] : Workers count: 0 Rounds: %
+[2018-05-05T10:50:23.905Z] [debug] [reef] [PaymentProcessor] : Checking for confirmed rounds (blocks)
+[2018-05-05T10:50:23.907Z] [warn] [reef] [PaymentProcessor] : Could not decrypt address from tx (no tx.result or tx.address field) {"result":"","error":null,"id":1525517423910}
+[2018-05-05T10:50:23.908Z] [debug] [reef] [PaymentProcessor] : Getting all shares for rounds and calculating rewards for miners
+[2018-05-05T10:50:23.908Z] [debug] [reef] [PaymentProcessor] : Mapping workers into payout addresses
+[2018-05-05T10:50:23.909Z] [debug] [reef] [PaymentProcessor] : Merged workers into payout addresses
+[2018-05-05T10:50:23.909Z] [debug] [reef] [PaymentProcessor] : Almost ready to send funds, calculating against existing balances
+[2018-05-05T10:50:23.909Z] [debug] [reef] [PaymentProcessor] : Trying to send
+[2018-05-05T10:50:23.910Z] [info] [reef] [PaymentProcessor] : No workers was chosen for paying out
+[2018-05-05T10:50:23.910Z] [debug] [reef] [PaymentProcessor] : Finished interval - time spent: 8 ms total, 1 ms redis, 4 ms daemon RPC
+[2018-05-05T10:50:43.913Z] [debug] [reef] [PaymentProcessor] : Calling redis for array of rounds
+[2018-05-05T10:50:43.913Z] [info] [reef] [PaymentProcessor] : Set up to process payments every 20 seconds
+[2018-05-05T10:50:43.914Z] [debug] [reef] [PaymentProcessor] : Redis responsed: [null,[]]
+[2018-05-05T10:50:43.914Z] [debug] [reef] [PaymentProcessor] : Prepared info basic info about payments
+[2018-05-05T10:50:43.915Z] [debug] [reef] [PaymentProcessor] : Workers count: 0 Rounds: %
+[2018-05-05T10:50:43.915Z] [debug] [reef] [PaymentProcessor] : Checking for confirmed rounds (blocks)
+[2018-05-05T10:50:43.917Z] [warn] [reef] [PaymentProcessor] : Could not decrypt address from tx (no tx.result or tx.address field) {"result":"","error":null,"id":1525517443919}
+[2018-05-05T10:50:43.918Z] [debug] [reef] [PaymentProcessor] : Getting all shares for rounds and calculating rewards for miners
+[2018-05-05T10:50:43.919Z] [debug] [reef] [PaymentProcessor] : Mapping workers into payout addresses
+[2018-05-05T10:50:43.919Z] [debug] [reef] [PaymentProcessor] : Merged workers into payout addresses
+[2018-05-05T10:50:43.920Z] [debug] [reef] [PaymentProcessor] : Almost ready to send funds, calculating against existing balances
+[2018-05-05T10:50:43.920Z] [debug] [reef] [PaymentProcessor] : Trying to send
+[2018-05-05T10:50:43.921Z] [info] [reef] [PaymentProcessor] : No workers was chosen for paying out
+[2018-05-05T10:50:43.921Z] [debug] [reef] [PaymentProcessor] : Finished interval - time spent: 8 ms total, 2 ms redis, 4 ms daemon RPC
+[2018-05-05T10:51:03.920Z] [debug] [reef] [PaymentProcessor] : Calling redis for array of rounds
+[2018-05-05T10:51:03.920Z] [info] [reef] [PaymentProcessor] : Set up to process payments every 20 seconds
+[2018-05-05T10:51:03.921Z] [debug] [reef] [PaymentProcessor] : Redis responsed: [null,[]]
+[2018-05-05T10:51:03.921Z] [debug] [reef] [PaymentProcessor] : Prepared info basic info about payments
+[2018-05-05T10:51:03.922Z] [debug] [reef] [PaymentProcessor] : Workers count: 0 Rounds: %
+[2018-05-05T10:51:03.922Z] [debug] [reef] [PaymentProcessor] : Checking for confirmed rounds (blocks)
+[2018-05-05T10:51:03.925Z] [warn] [reef] [PaymentProcessor] : Could not decrypt address from tx (no tx.result or tx.address field) {"result":"","error":null,"id":1525517463931}
+[2018-05-05T10:51:03.925Z] [debug] [reef] [PaymentProcessor] : Getting all shares for rounds and calculating rewards for miners
+[2018-05-05T10:51:03.926Z] [debug] [reef] [PaymentProcessor] : Mapping workers into payout addresses
+[2018-05-05T10:51:03.927Z] [debug] [reef] [PaymentProcessor] : Merged workers into payout addresses
+[2018-05-05T10:51:03.927Z] [debug] [reef] [PaymentProcessor] : Almost ready to send funds, calculating against existing balances
+[2018-05-05T10:51:03.927Z] [debug] [reef] [PaymentProcessor] : Trying to send
+[2018-05-05T10:51:03.928Z] [info] [reef] [PaymentProcessor] : No workers was chosen for paying out
+[2018-05-05T10:51:03.928Z] [debug] [reef] [PaymentProcessor] : Finished interval - time spent: 8 ms total, 1 ms redis, 4 ms daemon RPC
+[2018-05-05T10:51:23.925Z] [debug] [reef] [PaymentProcessor] : Calling redis for array of rounds
+[2018-05-05T10:51:23.926Z] [info] [reef] [PaymentProcessor] : Set up to process payments every 20 seconds
+[2018-05-05T10:51:23.926Z] [debug] [reef] [PaymentProcessor] : Redis responsed: [null,[]]
+[2018-05-05T10:51:23.927Z] [debug] [reef] [PaymentProcessor] : Prepared info basic info about payments
+[2018-05-05T10:51:23.927Z] [debug] [reef] [PaymentProcessor] : Workers count: 0 Rounds: %
+[2018-05-05T10:51:23.927Z] [debug] [reef] [PaymentProcessor] : Checking for confirmed rounds (blocks)
+[2018-05-05T10:51:23.930Z] [warn] [reef] [PaymentProcessor] : Could not decrypt address from tx (no tx.result or tx.address field) {"result":"","error":null,"id":1525517483931}
+[2018-05-05T10:51:23.930Z] [debug] [reef] [PaymentProcessor] : Getting all shares for rounds and calculating rewards for miners
+[2018-05-05T10:51:23.931Z] [debug] [reef] [PaymentProcessor] : Mapping workers into payout addresses
+[2018-05-05T10:51:23.931Z] [debug] [reef] [PaymentProcessor] : Merged workers into payout addresses
+[2018-05-05T10:51:23.932Z] [debug] [reef] [PaymentProcessor] : Almost ready to send funds, calculating against existing balances
+[2018-05-05T10:51:23.932Z] [debug] [reef] [PaymentProcessor] : Trying to send
+[2018-05-05T10:51:23.932Z] [info] [reef] [PaymentProcessor] : No workers was chosen for paying out
+[2018-05-05T10:51:23.933Z] [debug] [reef] [PaymentProcessor] : Finished interval - time spent: 8 ms total, 2 ms redis, 5 ms daemon RPC
+[2018-05-05T10:51:43.944Z] [debug] [reef] [PaymentProcessor] : Calling redis for array of rounds
+[2018-05-05T10:51:43.945Z] [info] [reef] [PaymentProcessor] : Set up to process payments every 20 seconds
+[2018-05-05T10:51:43.945Z] [debug] [reef] [PaymentProcessor] : Redis responsed: [null,[]]
+[2018-05-05T10:51:43.946Z] [debug] [reef] [PaymentProcessor] : Prepared info basic info about payments
+[2018-05-05T10:51:43.946Z] [debug] [reef] [PaymentProcessor] : Workers count: 0 Rounds: %
+[2018-05-05T10:51:43.946Z] [debug] [reef] [PaymentProcessor] : Checking for confirmed rounds (blocks)
+[2018-05-05T10:51:43.949Z] [warn] [reef] [PaymentProcessor] : Could not decrypt address from tx (no tx.result or tx.address field) {"result":"","error":null,"id":1525517503947}
+[2018-05-05T10:51:43.949Z] [debug] [reef] [PaymentProcessor] : Getting all shares for rounds and calculating rewards for miners
+[2018-05-05T10:51:43.950Z] [debug] [reef] [PaymentProcessor] : Mapping workers into payout addresses
+[2018-05-05T10:51:43.951Z] [debug] [reef] [PaymentProcessor] : Merged workers into payout addresses
+[2018-05-05T10:51:43.951Z] [debug] [reef] [PaymentProcessor] : Almost ready to send funds, calculating against existing balances
+[2018-05-05T10:51:43.951Z] [debug] [reef] [PaymentProcessor] : Trying to send
+[2018-05-05T10:51:43.952Z] [info] [reef] [PaymentProcessor] : No workers was chosen for paying out
+[2018-05-05T10:51:43.952Z] [debug] [reef] [PaymentProcessor] : Finished interval - time spent: 8 ms total, 2 ms redis, 5 ms daemon RPC
+[2018-05-05T10:52:03.962Z] [debug] [reef] [PaymentProcessor] : Calling redis for array of rounds
+[2018-05-05T10:52:03.962Z] [info] [reef] [PaymentProcessor] : Set up to process payments every 20 seconds
+[2018-05-05T10:52:03.963Z] [debug] [reef] [PaymentProcessor] : Redis responsed: [null,[]]
+[2018-05-05T10:52:03.963Z] [debug] [reef] [PaymentProcessor] : Prepared info basic info about payments
+[2018-05-05T10:52:03.964Z] [debug] [reef] [PaymentProcessor] : Workers count: 0 Rounds: %
+[2018-05-05T10:52:03.964Z] [debug] [reef] [PaymentProcessor] : Checking for confirmed rounds (blocks)
+[2018-05-05T10:52:03.966Z] [warn] [reef] [PaymentProcessor] : Could not decrypt address from tx (no tx.result or tx.address field) {"result":"","error":null,"id":1525517523968}
+[2018-05-05T10:52:03.967Z] [debug] [reef] [PaymentProcessor] : Getting all shares for rounds and calculating rewards for miners
+[2018-05-05T10:52:03.967Z] [debug] [reef] [PaymentProcessor] : Mapping workers into payout addresses
+[2018-05-05T10:52:03.968Z] [debug] [reef] [PaymentProcessor] : Merged workers into payout addresses
+[2018-05-05T10:52:03.968Z] [debug] [reef] [PaymentProcessor] : Almost ready to send funds, calculating against existing balances
+[2018-05-05T10:52:03.968Z] [debug] [reef] [PaymentProcessor] : Trying to send
+[2018-05-05T10:52:03.969Z] [info] [reef] [PaymentProcessor] : No workers was chosen for paying out
+[2018-05-05T10:52:03.969Z] [debug] [reef] [PaymentProcessor] : Finished interval - time spent: 7 ms total, 1 ms redis, 4 ms daemon RPC
+[2018-05-05T10:52:23.982Z] [debug] [reef] [PaymentProcessor] : Calling redis for array of rounds
+[2018-05-05T10:52:23.982Z] [info] [reef] [PaymentProcessor] : Set up to process payments every 20 seconds
+[2018-05-05T10:52:23.983Z] [debug] [reef] [PaymentProcessor] : Redis responsed: [null,[]]
+[2018-05-05T10:52:23.983Z] [debug] [reef] [PaymentProcessor] : Prepared info basic info about payments
+[2018-05-05T10:52:23.984Z] [debug] [reef] [PaymentProcessor] : Workers count: 0 Rounds: %
+[2018-05-05T10:52:23.984Z] [debug] [reef] [PaymentProcessor] : Checking for confirmed rounds (blocks)
+[2018-05-05T10:52:23.989Z] [warn] [reef] [PaymentProcessor] : Could not decrypt address from tx (no tx.result or tx.address field) {"result":"","error":null,"id":1525517543991}
+[2018-05-05T10:52:23.989Z] [debug] [reef] [PaymentProcessor] : Getting all shares for rounds and calculating rewards for miners
+[2018-05-05T10:52:23.990Z] [debug] [reef] [PaymentProcessor] : Mapping workers into payout addresses
+[2018-05-05T10:52:23.990Z] [debug] [reef] [PaymentProcessor] : Merged workers into payout addresses
+[2018-05-05T10:52:23.991Z] [debug] [reef] [PaymentProcessor] : Almost ready to send funds, calculating against existing balances
+[2018-05-05T10:52:23.991Z] [debug] [reef] [PaymentProcessor] : Trying to send
+[2018-05-05T10:52:23.991Z] [info] [reef] [PaymentProcessor] : No workers was chosen for paying out
+[2018-05-05T10:52:23.991Z] [debug] [reef] [PaymentProcessor] : Finished interval - time spent: 10 ms total, 1 ms redis, 7 ms daemon RPC
+[2018-05-05T10:52:43.998Z] [debug] [reef] [PaymentProcessor] : Calling redis for array of rounds
+[2018-05-05T10:52:43.998Z] [info] [reef] [PaymentProcessor] : Set up to process payments every 20 seconds
+[2018-05-05T10:52:43.999Z] [debug] [reef] [PaymentProcessor] : Redis responsed: [null,[]]
+[2018-05-05T10:52:43.999Z] [debug] [reef] [PaymentProcessor] : Prepared info basic info about payments
+[2018-05-05T10:52:44.000Z] [debug] [reef] [PaymentProcessor] : Workers count: 0 Rounds: %
+[2018-05-05T10:52:44.000Z] [debug] [reef] [PaymentProcessor] : Checking for confirmed rounds (blocks)
+[2018-05-05T10:52:44.002Z] [warn] [reef] [PaymentProcessor] : Could not decrypt address from tx (no tx.result or tx.address field) {"result":"","error":null,"id":1525517564000}
+[2018-05-05T10:52:44.003Z] [debug] [reef] [PaymentProcessor] : Getting all shares for rounds and calculating rewards for miners
+[2018-05-05T10:52:44.004Z] [debug] [reef] [PaymentProcessor] : Mapping workers into payout addresses
+[2018-05-05T10:52:44.004Z] [debug] [reef] [PaymentProcessor] : Merged workers into payout addresses
+[2018-05-05T10:52:44.005Z] [debug] [reef] [PaymentProcessor] : Almost ready to send funds, calculating against existing balances
+[2018-05-05T10:52:44.005Z] [debug] [reef] [PaymentProcessor] : Trying to send
+[2018-05-05T10:52:44.005Z] [info] [reef] [PaymentProcessor] : No workers was chosen for paying out
+[2018-05-05T10:52:44.006Z] [debug] [reef] [PaymentProcessor] : Finished interval - time spent: 8 ms total, 2 ms redis, 4 ms daemon RPC
+[2018-05-05T10:53:04.018Z] [debug] [reef] [PaymentProcessor] : Calling redis for array of rounds
+[2018-05-05T10:53:04.018Z] [info] [reef] [PaymentProcessor] : Set up to process payments every 20 seconds
+[2018-05-05T10:53:04.019Z] [debug] [reef] [PaymentProcessor] : Redis responsed: [null,[]]
+[2018-05-05T10:53:04.019Z] [debug] [reef] [PaymentProcessor] : Prepared info basic info about payments
+[2018-05-05T10:53:04.020Z] [debug] [reef] [PaymentProcessor] : Workers count: 0 Rounds: %
+[2018-05-05T10:53:04.020Z] [debug] [reef] [PaymentProcessor] : Checking for confirmed rounds (blocks)
+[2018-05-05T10:53:04.022Z] [warn] [reef] [PaymentProcessor] : Could not decrypt address from tx (no tx.result or tx.address field) {"result":"","error":null,"id":1525517584022}
+[2018-05-05T10:53:04.023Z] [debug] [reef] [PaymentProcessor] : Getting all shares for rounds and calculating rewards for miners
+[2018-05-05T10:53:04.024Z] [debug] [reef] [PaymentProcessor] : Mapping workers into payout addresses
+[2018-05-05T10:53:04.024Z] [debug] [reef] [PaymentProcessor] : Merged workers into payout addresses
+[2018-05-05T10:53:04.024Z] [debug] [reef] [PaymentProcessor] : Almost ready to send funds, calculating against existing balances
+[2018-05-05T10:53:04.024Z] [debug] [reef] [PaymentProcessor] : Trying to send
+[2018-05-05T10:53:04.025Z] [info] [reef] [PaymentProcessor] : No workers was chosen for paying out
+[2018-05-05T10:53:04.025Z] [debug] [reef] [PaymentProcessor] : Finished interval - time spent: 7 ms total, 1 ms redis, 4 ms daemon RPC
+[2018-05-05T10:53:24.036Z] [debug] [reef] [PaymentProcessor] : Calling redis for array of rounds
+[2018-05-05T10:53:24.037Z] [info] [reef] [PaymentProcessor] : Set up to process payments every 20 seconds
+[2018-05-05T10:53:24.037Z] [debug] [reef] [PaymentProcessor] : Redis responsed: [null,[]]
+[2018-05-05T10:53:24.037Z] [debug] [reef] [PaymentProcessor] : Prepared info basic info about payments
+[2018-05-05T10:53:24.038Z] [debug] [reef] [PaymentProcessor] : Workers count: 0 Rounds: %
+[2018-05-05T10:53:24.038Z] [debug] [reef] [PaymentProcessor] : Checking for confirmed rounds (blocks)
+[2018-05-05T10:53:24.040Z] [warn] [reef] [PaymentProcessor] : Could not decrypt address from tx (no tx.result or tx.address field) {"result":"","error":null,"id":1525517604040}
+[2018-05-05T10:53:24.041Z] [debug] [reef] [PaymentProcessor] : Getting all shares for rounds and calculating rewards for miners
+[2018-05-05T10:53:24.042Z] [debug] [reef] [PaymentProcessor] : Mapping workers into payout addresses
+[2018-05-05T10:53:24.042Z] [debug] [reef] [PaymentProcessor] : Merged workers into payout addresses
+[2018-05-05T10:53:24.042Z] [debug] [reef] [PaymentProcessor] : Almost ready to send funds, calculating against existing balances
+[2018-05-05T10:53:24.043Z] [debug] [reef] [PaymentProcessor] : Trying to send
+[2018-05-05T10:53:24.043Z] [info] [reef] [PaymentProcessor] : No workers was chosen for paying out
+[2018-05-05T10:53:24.044Z] [debug] [reef] [PaymentProcessor] : Finished interval - time spent: 7 ms total, 2 ms redis, 4 ms daemon RPC
+[2018-05-05T10:53:44.057Z] [debug] [reef] [PaymentProcessor] : Calling redis for array of rounds
+[2018-05-05T10:53:44.057Z] [info] [reef] [PaymentProcessor] : Set up to process payments every 20 seconds
+[2018-05-05T10:53:44.058Z] [debug] [reef] [PaymentProcessor] : Redis responsed: [null,[]]
+[2018-05-05T10:53:44.058Z] [debug] [reef] [PaymentProcessor] : Prepared info basic info about payments
+[2018-05-05T10:53:44.059Z] [debug] [reef] [PaymentProcessor] : Workers count: 0 Rounds: %
+[2018-05-05T10:53:44.059Z] [debug] [reef] [PaymentProcessor] : Checking for confirmed rounds (blocks)
+[2018-05-05T10:53:44.061Z] [warn] [reef] [PaymentProcessor] : Could not decrypt address from tx (no tx.result or tx.address field) {"result":"","error":null,"id":1525517624059}
+[2018-05-05T10:53:44.062Z] [debug] [reef] [PaymentProcessor] : Getting all shares for rounds and calculating rewards for miners
+[2018-05-05T10:53:44.063Z] [debug] [reef] [PaymentProcessor] : Mapping workers into payout addresses
+[2018-05-05T10:53:44.063Z] [debug] [reef] [PaymentProcessor] : Merged workers into payout addresses
+[2018-05-05T10:53:44.064Z] [debug] [reef] [PaymentProcessor] : Almost ready to send funds, calculating against existing balances
+[2018-05-05T10:53:44.064Z] [debug] [reef] [PaymentProcessor] : Trying to send
+[2018-05-05T10:53:44.066Z] [info] [reef] [PaymentProcessor] : No workers was chosen for paying out
+[2018-05-05T10:53:44.067Z] [debug] [reef] [PaymentProcessor] : Finished interval - time spent: 10 ms total, 2 ms redis, 4 ms daemon RPC
+[2018-05-05T10:54:04.070Z] [debug] [reef] [PaymentProcessor] : Calling redis for array of rounds
+[2018-05-05T10:54:04.071Z] [info] [reef] [PaymentProcessor] : Set up to process payments every 20 seconds
+[2018-05-05T10:54:04.072Z] [debug] [reef] [PaymentProcessor] : Redis responsed: [null,[]]
+[2018-05-05T10:54:04.072Z] [debug] [reef] [PaymentProcessor] : Prepared info basic info about payments
+[2018-05-05T10:54:04.072Z] [debug] [reef] [PaymentProcessor] : Workers count: 0 Rounds: %
+[2018-05-05T10:54:04.072Z] [debug] [reef] [PaymentProcessor] : Checking for confirmed rounds (blocks)
+[2018-05-05T10:54:04.075Z] [warn] [reef] [PaymentProcessor] : Could not decrypt address from tx (no tx.result or tx.address field) {"result":"","error":null,"id":1525517644080}
+[2018-05-05T10:54:04.075Z] [debug] [reef] [PaymentProcessor] : Getting all shares for rounds and calculating rewards for miners
+[2018-05-05T10:54:04.076Z] [debug] [reef] [PaymentProcessor] : Mapping workers into payout addresses
+[2018-05-05T10:54:04.076Z] [debug] [reef] [PaymentProcessor] : Merged workers into payout addresses
+[2018-05-05T10:54:04.076Z] [debug] [reef] [PaymentProcessor] : Almost ready to send funds, calculating against existing balances
+[2018-05-05T10:54:04.076Z] [debug] [reef] [PaymentProcessor] : Trying to send
+[2018-05-05T10:54:04.077Z] [info] [reef] [PaymentProcessor] : No workers was chosen for paying out
+[2018-05-05T10:54:04.077Z] [debug] [reef] [PaymentProcessor] : Finished interval - time spent: 7 ms total, 2 ms redis, 4 ms daemon RPC
+[2018-05-05T10:54:24.087Z] [debug] [reef] [PaymentProcessor] : Calling redis for array of rounds
+[2018-05-05T10:54:24.087Z] [info] [reef] [PaymentProcessor] : Set up to process payments every 20 seconds
+[2018-05-05T10:54:24.088Z] [debug] [reef] [PaymentProcessor] : Redis responsed: [null,[]]
+[2018-05-05T10:54:24.088Z] [debug] [reef] [PaymentProcessor] : Prepared info basic info about payments
+[2018-05-05T10:54:24.088Z] [debug] [reef] [PaymentProcessor] : Workers count: 0 Rounds: %
+[2018-05-05T10:54:24.089Z] [debug] [reef] [PaymentProcessor] : Checking for confirmed rounds (blocks)
+[2018-05-05T10:54:24.091Z] [warn] [reef] [PaymentProcessor] : Could not decrypt address from tx (no tx.result or tx.address field) {"result":"","error":null,"id":1525517664098}
+[2018-05-05T10:54:24.091Z] [debug] [reef] [PaymentProcessor] : Getting all shares for rounds and calculating rewards for miners
+[2018-05-05T10:54:24.092Z] [debug] [reef] [PaymentProcessor] : Mapping workers into payout addresses
+[2018-05-05T10:54:24.093Z] [debug] [reef] [PaymentProcessor] : Merged workers into payout addresses
+[2018-05-05T10:54:24.093Z] [debug] [reef] [PaymentProcessor] : Almost ready to send funds, calculating against existing balances
+[2018-05-05T10:54:24.093Z] [debug] [reef] [PaymentProcessor] : Trying to send
+[2018-05-05T10:54:24.094Z] [info] [reef] [PaymentProcessor] : No workers was chosen for paying out
+[2018-05-05T10:54:24.094Z] [debug] [reef] [PaymentProcessor] : Finished interval - time spent: 7 ms total, 1 ms redis, 4 ms daemon RPC
+[2018-05-05T10:54:44.108Z] [debug] [reef] [PaymentProcessor] : Calling redis for array of rounds
+[2018-05-05T10:54:44.109Z] [info] [reef] [PaymentProcessor] : Set up to process payments every 20 seconds
+[2018-05-05T10:54:44.110Z] [debug] [reef] [PaymentProcessor] : Redis responsed: [null,[]]
+[2018-05-05T10:54:44.110Z] [debug] [reef] [PaymentProcessor] : Prepared info basic info about payments
+[2018-05-05T10:54:44.110Z] [debug] [reef] [PaymentProcessor] : Workers count: 0 Rounds: %
+[2018-05-05T10:54:44.110Z] [debug] [reef] [PaymentProcessor] : Checking for confirmed rounds (blocks)
+[2018-05-05T10:54:44.113Z] [warn] [reef] [PaymentProcessor] : Could not decrypt address from tx (no tx.result or tx.address field) {"result":"","error":null,"id":1525517684120}
+[2018-05-05T10:54:44.113Z] [debug] [reef] [PaymentProcessor] : Getting all shares for rounds and calculating rewards for miners
+[2018-05-05T10:54:44.114Z] [debug] [reef] [PaymentProcessor] : Mapping workers into payout addresses
+[2018-05-05T10:54:44.115Z] [debug] [reef] [PaymentProcessor] : Merged workers into payout addresses
+[2018-05-05T10:54:44.115Z] [debug] [reef] [PaymentProcessor] : Almost ready to send funds, calculating against existing balances
+[2018-05-05T10:54:44.115Z] [debug] [reef] [PaymentProcessor] : Trying to send
+[2018-05-05T10:54:44.115Z] [info] [reef] [PaymentProcessor] : No workers was chosen for paying out
+[2018-05-05T10:54:44.116Z] [debug] [reef] [PaymentProcessor] : Finished interval - time spent: 8 ms total, 1 ms redis, 4 ms daemon RPC
+[2018-05-05T10:55:04.116Z] [debug] [reef] [PaymentProcessor] : Calling redis for array of rounds
+[2018-05-05T10:55:04.116Z] [info] [reef] [PaymentProcessor] : Set up to process payments every 20 seconds
+[2018-05-05T10:55:04.117Z] [debug] [reef] [PaymentProcessor] : Redis responsed: [null,[]]
+[2018-05-05T10:55:04.117Z] [debug] [reef] [PaymentProcessor] : Prepared info basic info about payments
+[2018-05-05T10:55:04.117Z] [debug] [reef] [PaymentProcessor] : Workers count: 0 Rounds: %
+[2018-05-05T10:55:04.118Z] [debug] [reef] [PaymentProcessor] : Checking for confirmed rounds (blocks)
+[2018-05-05T10:55:04.121Z] [warn] [reef] [PaymentProcessor] : Could not decrypt address from tx (no tx.result or tx.address field) {"result":"","error":null,"id":1525517704123}
+[2018-05-05T10:55:04.121Z] [debug] [reef] [PaymentProcessor] : Getting all shares for rounds and calculating rewards for miners
+[2018-05-05T10:55:04.124Z] [debug] [reef] [PaymentProcessor] : Mapping workers into payout addresses
+[2018-05-05T10:55:04.124Z] [debug] [reef] [PaymentProcessor] : Merged workers into payout addresses
+[2018-05-05T10:55:04.124Z] [debug] [reef] [PaymentProcessor] : Almost ready to send funds, calculating against existing balances
+[2018-05-05T10:55:04.125Z] [debug] [reef] [PaymentProcessor] : Trying to send
+[2018-05-05T10:55:04.125Z] [info] [reef] [PaymentProcessor] : No workers was chosen for paying out
+[2018-05-05T10:55:04.126Z] [debug] [reef] [PaymentProcessor] : Finished interval - time spent: 9 ms total, 2 ms redis, 5 ms daemon RPC
+[2018-05-05T10:55:24.128Z] [debug] [reef] [PaymentProcessor] : Calling redis for array of rounds
+[2018-05-05T10:55:24.129Z] [info] [reef] [PaymentProcessor] : Set up to process payments every 20 seconds
+[2018-05-05T10:55:24.130Z] [debug] [reef] [PaymentProcessor] : Redis responsed: [null,[]]
+[2018-05-05T10:55:24.130Z] [debug] [reef] [PaymentProcessor] : Prepared info basic info about payments
+[2018-05-05T10:55:24.131Z] [debug] [reef] [PaymentProcessor] : Workers count: 0 Rounds: %
+[2018-05-05T10:55:24.131Z] [debug] [reef] [PaymentProcessor] : Checking for confirmed rounds (blocks)
+[2018-05-05T10:55:24.133Z] [warn] [reef] [PaymentProcessor] : Could not decrypt address from tx (no tx.result or tx.address field) {"result":"","error":null,"id":1525517724136}
+[2018-05-05T10:55:24.134Z] [debug] [reef] [PaymentProcessor] : Getting all shares for rounds and calculating rewards for miners
+[2018-05-05T10:55:24.134Z] [debug] [reef] [PaymentProcessor] : Mapping workers into payout addresses
+[2018-05-05T10:55:24.135Z] [debug] [reef] [PaymentProcessor] : Merged workers into payout addresses
+[2018-05-05T10:55:24.135Z] [debug] [reef] [PaymentProcessor] : Almost ready to send funds, calculating against existing balances
+[2018-05-05T10:55:24.135Z] [debug] [reef] [PaymentProcessor] : Trying to send
+[2018-05-05T10:55:24.136Z] [info] [reef] [PaymentProcessor] : No workers was chosen for paying out
+[2018-05-05T10:55:24.136Z] [debug] [reef] [PaymentProcessor] : Finished interval - time spent: 8 ms total, 2 ms redis, 5 ms daemon RPC
+[2018-05-05T10:55:44.146Z] [debug] [reef] [PaymentProcessor] : Calling redis for array of rounds
+[2018-05-05T10:55:44.146Z] [info] [reef] [PaymentProcessor] : Set up to process payments every 20 seconds
+[2018-05-05T10:55:44.147Z] [debug] [reef] [PaymentProcessor] : Redis responsed: [null,[]]
+[2018-05-05T10:55:44.147Z] [debug] [reef] [PaymentProcessor] : Prepared info basic info about payments
+[2018-05-05T10:55:44.147Z] [debug] [reef] [PaymentProcessor] : Workers count: 0 Rounds: %
+[2018-05-05T10:55:44.148Z] [debug] [reef] [PaymentProcessor] : Checking for confirmed rounds (blocks)
+[2018-05-05T10:55:44.150Z] [warn] [reef] [PaymentProcessor] : Could not decrypt address from tx (no tx.result or tx.address field) {"result":"","error":null,"id":1525517744151}
+[2018-05-05T10:55:44.150Z] [debug] [reef] [PaymentProcessor] : Getting all shares for rounds and calculating rewards for miners
+[2018-05-05T10:55:44.151Z] [debug] [reef] [PaymentProcessor] : Mapping workers into payout addresses
+[2018-05-05T10:55:44.151Z] [debug] [reef] [PaymentProcessor] : Merged workers into payout addresses
+[2018-05-05T10:55:44.154Z] [debug] [reef] [PaymentProcessor] : Almost ready to send funds, calculating against existing balances
+[2018-05-05T10:55:44.155Z] [debug] [reef] [PaymentProcessor] : Trying to send
+[2018-05-05T10:55:44.155Z] [info] [reef] [PaymentProcessor] : No workers was chosen for paying out
+[2018-05-05T10:55:44.155Z] [debug] [reef] [PaymentProcessor] : Finished interval - time spent: 10 ms total, 2 ms redis, 4 ms daemon RPC
+[2018-05-05T10:56:04.150Z] [debug] [reef] [PaymentProcessor] : Calling redis for array of rounds
+[2018-05-05T10:56:04.150Z] [info] [reef] [PaymentProcessor] : Set up to process payments every 20 seconds
+[2018-05-05T10:56:04.151Z] [debug] [reef] [PaymentProcessor] : Redis responsed: [null,[]]
+[2018-05-05T10:56:04.151Z] [debug] [reef] [PaymentProcessor] : Prepared info basic info about payments
+[2018-05-05T10:56:04.151Z] [debug] [reef] [PaymentProcessor] : Workers count: 0 Rounds: %
+[2018-05-05T10:56:04.152Z] [debug] [reef] [PaymentProcessor] : Checking for confirmed rounds (blocks)
+[2018-05-05T10:56:04.154Z] [warn] [reef] [PaymentProcessor] : Could not decrypt address from tx (no tx.result or tx.address field) {"result":"","error":null,"id":1525517764157}
+[2018-05-05T10:56:04.154Z] [debug] [reef] [PaymentProcessor] : Getting all shares for rounds and calculating rewards for miners
+[2018-05-05T10:56:04.155Z] [debug] [reef] [PaymentProcessor] : Mapping workers into payout addresses
+[2018-05-05T10:56:04.156Z] [debug] [reef] [PaymentProcessor] : Merged workers into payout addresses
+[2018-05-05T10:56:04.156Z] [debug] [reef] [PaymentProcessor] : Almost ready to send funds, calculating against existing balances
+[2018-05-05T10:56:04.156Z] [debug] [reef] [PaymentProcessor] : Trying to send
+[2018-05-05T10:56:04.157Z] [info] [reef] [PaymentProcessor] : No workers was chosen for paying out
+[2018-05-05T10:56:04.157Z] [debug] [reef] [PaymentProcessor] : Finished interval - time spent: 7 ms total, 1 ms redis, 4 ms daemon RPC
+[2018-05-05T10:56:24.167Z] [debug] [reef] [PaymentProcessor] : Calling redis for array of rounds
+[2018-05-05T10:56:24.168Z] [info] [reef] [PaymentProcessor] : Set up to process payments every 20 seconds
+[2018-05-05T10:56:24.168Z] [debug] [reef] [PaymentProcessor] : Redis responsed: [null,[]]
+[2018-05-05T10:56:24.169Z] [debug] [reef] [PaymentProcessor] : Prepared info basic info about payments
+[2018-05-05T10:56:24.169Z] [debug] [reef] [PaymentProcessor] : Workers count: 0 Rounds: %
+[2018-05-05T10:56:24.169Z] [debug] [reef] [PaymentProcessor] : Checking for confirmed rounds (blocks)
+[2018-05-05T10:56:24.172Z] [warn] [reef] [PaymentProcessor] : Could not decrypt address from tx (no tx.result or tx.address field) {"result":"","error":null,"id":1525517784172}
+[2018-05-05T10:56:24.172Z] [debug] [reef] [PaymentProcessor] : Getting all shares for rounds and calculating rewards for miners
+[2018-05-05T10:56:24.173Z] [debug] [reef] [PaymentProcessor] : Mapping workers into payout addresses
+[2018-05-05T10:56:24.173Z] [debug] [reef] [PaymentProcessor] : Merged workers into payout addresses
+[2018-05-05T10:56:24.174Z] [debug] [reef] [PaymentProcessor] : Almost ready to send funds, calculating against existing balances
+[2018-05-05T10:56:24.174Z] [debug] [reef] [PaymentProcessor] : Trying to send
+[2018-05-05T10:56:24.174Z] [info] [reef] [PaymentProcessor] : No workers was chosen for paying out
+[2018-05-05T10:56:24.175Z] [debug] [reef] [PaymentProcessor] : Finished interval - time spent: 8 ms total, 1 ms redis, 4 ms daemon RPC
+[2018-05-05T10:56:44.188Z] [debug] [reef] [PaymentProcessor] : Calling redis for array of rounds
+[2018-05-05T10:56:44.188Z] [info] [reef] [PaymentProcessor] : Set up to process payments every 20 seconds
+[2018-05-05T10:56:44.189Z] [debug] [reef] [PaymentProcessor] : Redis responsed: [null,[]]
+[2018-05-05T10:56:44.189Z] [debug] [reef] [PaymentProcessor] : Prepared info basic info about payments
+[2018-05-05T10:56:44.189Z] [debug] [reef] [PaymentProcessor] : Workers count: 0 Rounds: %
+[2018-05-05T10:56:44.190Z] [debug] [reef] [PaymentProcessor] : Checking for confirmed rounds (blocks)
+[2018-05-05T10:56:44.192Z] [warn] [reef] [PaymentProcessor] : Could not decrypt address from tx (no tx.result or tx.address field) {"result":"","error":null,"id":1525517804190}
+[2018-05-05T10:56:44.192Z] [debug] [reef] [PaymentProcessor] : Getting all shares for rounds and calculating rewards for miners
+[2018-05-05T10:56:44.193Z] [debug] [reef] [PaymentProcessor] : Mapping workers into payout addresses
+[2018-05-05T10:56:44.193Z] [debug] [reef] [PaymentProcessor] : Merged workers into payout addresses
+[2018-05-05T10:56:44.194Z] [debug] [reef] [PaymentProcessor] : Almost ready to send funds, calculating against existing balances
+[2018-05-05T10:56:44.194Z] [debug] [reef] [PaymentProcessor] : Trying to send
+[2018-05-05T10:56:44.194Z] [info] [reef] [PaymentProcessor] : No workers was chosen for paying out
+[2018-05-05T10:56:44.195Z] [debug] [reef] [PaymentProcessor] : Finished interval - time spent: 7 ms total, 1 ms redis, 4 ms daemon RPC
+[2018-05-05T10:57:04.197Z] [debug] [reef] [PaymentProcessor] : Calling redis for array of rounds
+[2018-05-05T10:57:04.198Z] [info] [reef] [PaymentProcessor] : Set up to process payments every 20 seconds
+[2018-05-05T10:57:04.198Z] [debug] [reef] [PaymentProcessor] : Redis responsed: [null,[]]
+[2018-05-05T10:57:04.198Z] [debug] [reef] [PaymentProcessor] : Prepared info basic info about payments
+[2018-05-05T10:57:04.199Z] [debug] [reef] [PaymentProcessor] : Workers count: 0 Rounds: %
+[2018-05-05T10:57:04.199Z] [debug] [reef] [PaymentProcessor] : Checking for confirmed rounds (blocks)
+[2018-05-05T10:57:04.201Z] [warn] [reef] [PaymentProcessor] : Could not decrypt address from tx (no tx.result or tx.address field) {"result":"","error":null,"id":1525517824207}
+[2018-05-05T10:57:04.202Z] [debug] [reef] [PaymentProcessor] : Getting all shares for rounds and calculating rewards for miners
+[2018-05-05T10:57:04.202Z] [debug] [reef] [PaymentProcessor] : Mapping workers into payout addresses
+[2018-05-05T10:57:04.202Z] [debug] [reef] [PaymentProcessor] : Merged workers into payout addresses
+[2018-05-05T10:57:04.202Z] [debug] [reef] [PaymentProcessor] : Almost ready to send funds, calculating against existing balances
+[2018-05-05T10:57:04.203Z] [debug] [reef] [PaymentProcessor] : Trying to send
+[2018-05-05T10:57:04.203Z] [info] [reef] [PaymentProcessor] : No workers was chosen for paying out
+[2018-05-05T10:57:04.203Z] [debug] [reef] [PaymentProcessor] : Finished interval - time spent: 6 ms total, 1 ms redis, 4 ms daemon RPC
